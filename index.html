@@ -1,0 +1,54 @@
+<!--
+* File name: index.html
+* Description:
+* Stream capture demo.
+* Transmit text.
+* Author: Elisabet González.
+* Source:
+* Date: October 6th, 2016.
+* Version 1.0
+*
+* History:
+* v1.0  06/10/2016  Send text to another peer.
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sending Text Demo</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="main.css">
+    <link href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" type="text/css">
+  </head>
+
+  <body>
+    <div id="container">
+      <h1>
+        Transmit Text v1.0
+      </h1>
+
+      <div id="buttons">
+        <button id="startButton">Start</button>
+        <button id="sendButton">Send</button>
+        <button id="closeButton">Close</button>
+      </div>
+
+      <div id="sendReceive">
+        <div id="send">
+          <h2>Send</h2>
+          <textarea id="dataChannelSend" disabled placeholder="Press start and write some text"></textarea>
+        </div>
+        <div id="receive">
+          <h2>Receive</h2>
+          <textarea id="dataChannelReceive" disabled></textarea>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/adapter.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/lib/ga.js"></script>
+
+  </body>
+</html>
